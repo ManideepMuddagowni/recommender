@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <html>
+<head>
+  <title>HTML Elements Reference</title>
+</head>
+<body>
+
+<h1>AURA CARD</h1>
+<p>Welcome to Aura platform</p>
+
+<p> You have no sufficient balance to do this transaction. Please try with other transaction amount </p>
+
+<p>Your Account Details are as follows:</p>
+
+</body>
+</html>
+<html>
+<head>
+	
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    {% for table in tables %}
+    {{titles[loop.index]}}
+    {{ table|safe }}
+{% endfor %}
+
+	
+    <html>
+        <head>
+          <title>Submit Button Redirect</title>  
+        </head>    
+         <body>     
+          <form method="POST" action="amount_input">  
+            <input type="submit"/>  
+          </form>    
+         </body>    
+     </html>
+
+
+</body>
+</html>

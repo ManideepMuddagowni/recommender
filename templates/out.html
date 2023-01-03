@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <html>
+<head>
+  <title>HTML Elements Reference</title>
+</head>
+<body>
+
+<h1>RECOMMENDATION BASED ON PRODUCT</h1>
+<h1>Welcome to VISHAL ENTERPRISES</h1>
+
+
+<html>
+   <head>
+     <title>Submit Button Redirect</title>  
+   </head>    
+    <body>     
+     <form method="POST" action="result">  
+       
+
+<div class="ml-container">
+
+    <form action="{{ url_for('result')}}" method="POST">
+    
+        <label><b>Recommendation based on SKU</b></label>
+        <input type="text" placeholder="Search SKU" name="p_s" id="p_s" required>
+           
+        <input type="submit" class="btn-info" value="Submit">
+        
+</form>
+    
+</div>
+  
+     </form>    
+    </body>    
+</html>
+
+</body>
+</html>
+<html>
+<head>
+	
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+
+
+{% for table in tables %}
+            {{titles[loop.index]}}
+            {{ table|safe }}
+{% endfor %}
+
+
+</body>
+</html>
+
